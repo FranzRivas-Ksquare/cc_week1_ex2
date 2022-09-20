@@ -12,12 +12,22 @@
 
 
 */
+// function palindrome: input string
+// return: true or flase if is or not a palindrome.
 
 /** DO NOT CHANGE THE FUNCTION NAME **/
 const palindrome = (str) => {
     /* Only make changes below this comment */
-    
-    
+    const original = str.replace(/\s+/g, '');
+    const chars = original.split('');
+    const reversed = chars.reverse();
+    const compare = reversed.join('');
+
+    if (compare === original) {
+        return true;
+    };
+
+    return false;
     /* Only make changes below this comment */
 }
 
